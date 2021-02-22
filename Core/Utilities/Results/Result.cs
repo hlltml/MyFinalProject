@@ -7,10 +7,10 @@ namespace Core.Utilities.Results
     public class Result : IResult
     {
 
-        public Result(bool success, string message=null):this(success)
+        public Result(bool success, string message):this(success)
         {
-            //Message gettır yani set edilemez bir değişkendir.
-            //Gettır'lar read only'dir ve read only'ler sadece constructor içinde set edilebilir.
+            //Message getter yani set edilemez bir değişkendir.
+            //Getter'lar read only'dir ve read only'ler sadece constructor içinde set edilebilir.
             Message = message;
         }
 
